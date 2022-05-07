@@ -1,7 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository_name>/'
+  }
+} : {}
+
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  ...routerBase,
   head: {
     titleTemplate: '%s - stock-app',
     title: 'stock-app',
@@ -65,9 +72,7 @@ export default {
         }
       }
     },
-    router: {
-      base: 'finance-web'
-    }
+    
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
