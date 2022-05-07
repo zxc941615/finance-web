@@ -64,6 +64,9 @@ export default {
           success: colors.green.accent3
         }
       }
+    },
+    router: {
+      base: 'finance-web'
     }
   },
 
