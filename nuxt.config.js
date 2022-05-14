@@ -10,6 +10,7 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   // ...routerBase,
   head: {
+    mode:'spa',
     titleTemplate: '%s - stock-app',
     title: 'stock-app',
     htmlAttrs: {
