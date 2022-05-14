@@ -1,14 +1,14 @@
 import colors from 'vuetify/es5/util/colors'
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/finance-web/'
-  }
-} : {}
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//   router: {
+//     base: '/finance-web/'
+//   }
+// } : {}
 
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  ...routerBase,
+  // ...routerBase,
   head: {
     titleTemplate: '%s - stock-app',
     title: 'stock-app',
@@ -24,7 +24,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    target: 'static'
+    target: 'static',
+    router: {
+      base: '/finance-web/'
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
