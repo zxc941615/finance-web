@@ -27,7 +27,7 @@ export default {
     ],
     target: 'static',
     router: {
-      base: '/finance-web/'
+      base: '/finance-pages/'
     }
   },
 
